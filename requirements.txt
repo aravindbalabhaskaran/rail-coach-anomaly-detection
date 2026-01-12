@@ -1,0 +1,9 @@
+torch
+torchvision
+opencv-python
+numpy
+pillow
+pyyaml
+tqdm
+jinja2
+pytest
