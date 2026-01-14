@@ -1,0 +1,221 @@
+{
+  "num_images": 6,
+  "items": [
+    {
+      "filename": "anomalies_on_capture_original.jpg",
+      "annotated_rel": "annotated/anomalies_on_capture_original.jpg",
+      "detections": [
+        {
+          "bbox": [
+            0,
+            0,
+            640,
+            471
+          ],
+          "score": 0.99,
+          "label": "anomaly_blob"
+        }
+      ]
+    },
+    {
+      "filename": "anomalies_on_capture_zoom3x.jpg",
+      "annotated_rel": "annotated/anomalies_on_capture_zoom3x.jpg",
+      "detections": [
+        {
+          "bbox": [
+            0,
+            0,
+            415,
+            429
+          ],
+          "score": 0.21648763020833334,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            0,
+            108,
+            185,
+            300
+          ],
+          "score": 0.115966796875,
+          "label": "anomaly_blob"
+        }
+      ]
+    },
+    {
+      "filename": "anomalies_on_capture_zoom5x.jpg",
+      "annotated_rel": "annotated/anomalies_on_capture_zoom5x.jpg",
+      "detections": [
+        {
+          "bbox": [
+            0,
+            0,
+            226,
+            399
+          ],
+          "score": 0.99,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            239,
+            0,
+            492,
+            138
+          ],
+          "score": 0.161767578125,
+          "label": "anomaly_blob"
+        }
+      ]
+    },
+    {
+      "filename": "anomalies_zoom_3x.jpg",
+      "annotated_rel": "annotated/anomalies_zoom_3x.jpg",
+      "detections": [
+        {
+          "bbox": [
+            0,
+            0,
+            640,
+            480
+          ],
+          "score": 0.96337890625,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            132,
+            87,
+            444,
+            390
+          ],
+          "score": 0.22443033854166666,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            63,
+            349,
+            81,
+            428
+          ],
+          "score": 0.0138671875,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            261,
+            55,
+            325,
+            124
+          ],
+          "score": 0.011409505208333332,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            334,
+            224,
+            362,
+            252
+          ],
+          "score": 0.010970052083333333,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            151,
+            197,
+            195,
+            217
+          ],
+          "score": 0.010107421875,
+          "label": "anomaly_blob"
+        }
+      ]
+    },
+    {
+      "filename": "anomalies_zoom_5x.jpg",
+      "annotated_rel": "annotated/anomalies_zoom_5x.jpg",
+      "detections": [
+        {
+          "bbox": [
+            0,
+            117,
+            640,
+            480
+          ],
+          "score": 0.24558919270833335,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            0,
+            0,
+            640,
+            354
+          ],
+          "score": 0.10572916666666667,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            195,
+            200,
+            417,
+            358
+          ],
+          "score": 0.07032877604166667,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            75,
+            280,
+            192,
+            361
+          ],
+          "score": 0.012923177083333333,
+          "label": "anomaly_blob"
+        }
+      ]
+    },
+    {
+      "filename": "default_clean.jpg",
+      "annotated_rel": "annotated/default_clean.jpg",
+      "detections": [
+        {
+          "bbox": [
+            0,
+            0,
+            630,
+            542
+          ],
+          "score": 0.32523871527777776,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            441,
+            254,
+            726,
+            466
+          ],
+          "score": 0.15872938368055556,
+          "label": "anomaly_blob"
+        },
+        {
+          "bbox": [
+            309,
+            411,
+            490,
+            559
+          ],
+          "score": 0.10353190104166667,
+          "label": "anomaly_blob"
+        }
+      ]
+    }
+  ]
+}
