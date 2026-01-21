@@ -3,6 +3,15 @@
 Post-journey image analysis pipeline to flag cleanliness & safety anomalies in rail coaches
 (e.g., trash, spills, loose objects) using Computer Vision and PyTorch.
 
+## 🚀 1-Minute Demo (Privacy-Safe)
+
+This repository includes a fully reproducible demo using **synthetic images**
+(no real train or passenger data required).
+
+```bash
+python src/make_synthetic_dataset.py
+python src/demo_run.py
+
 ## Problem Statement
 Manual inspection of train coaches after journeys is time-consuming and inconsistent.
 This project automates post-journey inspection by analyzing camera images and highlighting
