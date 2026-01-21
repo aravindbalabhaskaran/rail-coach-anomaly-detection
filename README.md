@@ -1,47 +1,60 @@
-# Rail Coach Anomaly Detection (PyTorch + OpenCV)
+# 🚆 Rail Coach Anomaly Detection for Sustainable Cleaning
 
-Post-journey image analysis pipeline to flag cleanliness & safety anomalies in rail coaches
-(e.g., trash, spills, loose objects) using Computer Vision and PyTorch.
+This project demonstrates a **privacy-safe, reproducible computer vision pipeline** for detecting cleanliness and maintenance anomalies in rail coaches using **existing cabin camera infrastructure**.
+
+The system is designed to support **condition-based cleaning**, reducing unnecessary water usage, energy consumption, and labor by prioritizing only coaches that actually require attention.
+
+> ⚠️ **Note on data privacy:**  
+> Real rail-coach interior images cannot be shared due to access and privacy constraints.  
+> This repository therefore includes a **synthetic but realistic demo dataset** that fully replicates the intended real-world pipeline.
+
+---
+
+## 🧠 Problem Statement
+
+Rail coaches are typically cleaned on a **fixed schedule**, regardless of their actual condition.  
+This leads to:
+- unnecessary water and energy consumption  
+- avoidable labor costs  
+- inefficient maintenance planning  
+
+This project addresses the problem by answering one question:
+
+> **“Can post-journey images from existing cameras be used to automatically decide *whether* and *how urgently* a coach needs cleaning?”**
+
+---
+
+## 💡 Solution Overview
+
+The pipeline:
+1. Compares **post-journey images** against a clean reference
+2. Computes an **anomaly score** using image similarity
+3. Converts scores into **cleaning priorities**
+4. Estimates **resource savings** from skipped or reduced cleaning
+5. Produces a **visual heatmap** for fast human inspection
+
+All of this is done **without requiring new hardware**.
+
+---
+
+## 🌱 Sustainability & Real-World Impact
+
+By enabling **condition-based cleaning**, this approach can:
+- Reduce unnecessary water usage
+- Lower energy consumption of cleaning equipment
+- Optimize labor allocation
+- Improve coach turnaround time
+
+The system converts raw computer-vision outputs into **actionable operational decisions**, bridging AI and sustainability.
+
+---
 
 ## 🚀 1-Minute Demo (Privacy-Safe)
 
-This repository includes a fully reproducible demo using **synthetic images**
+This repository includes a **fully reproducible demo** using synthetic images  
 (no real train or passenger data required).
 
+### Run the demo
 ```bash
 python src/make_synthetic_dataset.py
 python src/demo_run.py
-
-## Problem Statement
-Manual inspection of train coaches after journeys is time-consuming and inconsistent.
-This project automates post-journey inspection by analyzing camera images and highlighting
-potential anomalies that require maintenance attention.
-
-## Why this matters
-- **Maintenance automation:** reduces repetitive manual checks and speeds up turnaround time
-- **Safety & comfort:** detects hazards (spills/objects) before next departure
-- **Operational efficiency:** prioritizes cleaning/repair teams using a structured report
-
-## Solution Overview (Pipeline)
-1. **Ingest** post-journey images (multiple angles/zoom)
-2. **Preprocess** images (denoise + contrast enhancement + sharpening)
-3. **Detect anomalies**
-   - v0: baseline CV detector (fast, no training)
-   - v1: PyTorch detector (pretrained / fine-tuned)
-4. **Generate report** (annotated images + HTML + JSON)
-5. **Optional notification** to maintenance (email integration)
-
-## Quickstart (How to run)
-```bash
-# 1) Create env
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# Linux/Mac:
-# source .venv/bin/activate
-
-# 2) Install
-pip install -r requirements.txt
-
-# 3) Run (example)
-python -m coach_anomaly.cli --input assets/sample_images --out runs
