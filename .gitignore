@@ -2,3 +2,7 @@ runs/
 .venv/
 __pycache__/
 *.pyc
+# Virtual environments
+.venv/
+venv/
+.env/
