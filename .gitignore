@@ -1,8 +1,5 @@
-runs/
-.venv/
-__pycache__/
-*.pyc
-# Virtual environments
 .venv/
 venv/
 .env/
+__pycache__/
+*.pyc
