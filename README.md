@@ -1,16 +1,16 @@
-# 🚆 Rail Coach Anomaly Detection for Sustainable Cleaning
+#  Rail Coach Anomaly Detection for Sustainable Cleaning
 
 This project demonstrates a **privacy-safe, reproducible computer vision pipeline** for detecting cleanliness and maintenance anomalies in rail coaches using **existing cabin camera infrastructure**.
 
 The system is designed to support **condition-based cleaning**, reducing unnecessary water usage, energy consumption, and labor by prioritizing only coaches that actually require attention.
 
-> ⚠️ **Note on data privacy:**  
+>  **Note on data privacy:**  
 > Real rail-coach interior images cannot be shared due to access and privacy constraints.  
 > This repository therefore includes a **synthetic but realistic demo dataset** that fully replicates the intended real-world pipeline.
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Rail coaches are typically cleaned on a **fixed schedule**, regardless of their actual condition.  
 This leads to:
@@ -24,7 +24,7 @@ This project addresses the problem by answering one question:
 
 ---
 
-## 💡 Solution Overview
+##  Solution Overview
 
 The pipeline:
 1. Compares **post-journey images** against a clean reference
@@ -37,7 +37,7 @@ All of this is done **without requiring new hardware**.
 
 ---
 
-## 🌱 Sustainability & Real-World Impact
+##  Sustainability & Real-World Impact
 
 By enabling **condition-based cleaning**, this approach can:
 - Reduce unnecessary water usage
@@ -49,7 +49,7 @@ The system converts raw computer-vision outputs into **actionable operational de
 
 ---
 
-## 🚀 1-Minute Demo (Privacy-Safe)
+##  1-Minute Demo (Privacy-Safe)
 
 This repository includes a **fully reproducible demo** using synthetic images  
 (no real train or passenger data required).
